@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<head>
+<title>UkiLife</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $(" li1 ").hide();
+  });
+  $("#show").click(function(){
+    $("li1").show();
+  });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown("slow");
+  });
+});
+
+</script>
+
+<script>
+$(document).ready(function(){
+  $("#p1").hover(function(){
+    alert("You entered p1!");
+  },
+  function(){
+    alert("Bye! You now leave p1!");
+  });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $("h2").on({
+    mouseenter: function(){
+      $(this).css("background-color", "lightgray");
+    },
+    mouseleave: function(){
+      $(this).css("background-color", "lightblue");
+    },
+    click: function(){
+      $(this).css("background-color", "yellow");
+    }
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $("#flip1").click(function(){
+    $("#panel1").slideToggle();
+  });
+});
+</script>
+
+
+<style>
+
+
+
+#panel1, #flip1 {
+
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel1 {
+
+  display: none;
+}
+
+#panel, #flip {
+  padding: none;
+  text-align: center;
+  background-color: #e5eecc;
+
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+
+
+
+#rcorners1 {
+  border-radius: 10px;
+  background: lightblue;
+  padding: 30px;
+
+  font-size: 15px;
+
+}
+
+#rcorners2 {
+  border-radius: 10px;
+  background: #c3c7a7;
+  padding: 10px;
+  width: 30%;
+  height: 230px;
+  font-size: 15px;
+  float:left;
+}
+
+#rcorners3 {
+  border-radius: 10px;
+  background: #c3c7a7;
+  padding: 10px;
+  width: 30%;
+  height: 230px;
+  font-size: 15px;
+  float:right;
+  margin:10px 0px 10px 10px
+}
+
+
+
+#ul1 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+   }
+
+
+#li1 {
+     display: inline;
+  }
+
+
+  .footer {
+    top: 95%;
+ position: fixed;
+
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:lightblue;
+   color: black;
+   text-align: center;
+}
+
+
+
+</style>
+</head>
+
+<body>
+
+  <div>
+    <center>
+      <ul id="#1">
+          <li id="#1"><a href="Index.html"  style="text-decoration: none;">Home |</a></li>
+           <li id="#1"><a href="time thuva.html"   style="text-decoration: none;"  target=_blank >form |</a></li>
+            <li id="#1"><a href="uki stu timetable.html" style="text-decoration: none;"  target=_blank>Timetable</a></li>
+    </ul>  </center> </div>
+
+
+  <center> <img src="download.png" alt="Uki logo" width="80%" height="250px"> </center><p>
+    <div id="flip">
+<center><p id="p1" style="background-color: lightblue;">Welcome Uki</p></center>
+</div>
+
+<div id="panel">HAI UKI</div>
+
+
+
+
+
+<center>
+<div style="float: center; width: 20%; height: 200px; background-color:lightblue"  id="rcorners1">
+  <h2>Welcome to Uki: Stepping Stone To Tech Life</h2>
+  <p>Uki is a coding school by Yarl IT Hub, which offers six
+     months-long intensive, in-class training program that trains
+      students to acquire skills needed to join tech
+      companies as interns/ junior developers or become entrepreneurs.
+</p>
+</div>
+</center>
+
+
+
+<div id="rcorners2">
+  <h2 align="left">Courses</h2>
+  <p>Uki is a coding school by Yarl IT Hub, which offers six
+     months-long intensive, in-class training program that trains
+      students to acquire skills needed to join tech
+      companies as interns/ junior developers or become entrepreneurs.
+</p>
+
+<div id= " div1">
+<ul>
+<li1>  Programming</li><br>
+<li1>  Basic Business Skills</li><br>
+<li1>  English</li><br>
+<li1>  Personal Coaching</li><br>
+
+</ul>
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+
+
+</div>
+</div>
+
+
+
+<div id="rcorners3">
+  <h2>Coding Accelerator Program</h2>
+  <p>Learn to code in 6 months (Full time)<br>
+Uki is a life-changing program with a proven track record of enabling those who had completed secondary school education to join the tech industry.
+ The outcome-based learning experience at Uki is a meticulously designed program which has been developed by tech industry practitioners and skilled teachers.
+ It ensures a transformational development of the technical skills, language skills, business skills and interpersonal skills of each student who completes the course.
+
+ <div id="flip1"><button>details</button></div>
+ <div id="panel1">call 0778995147</div>
+
+
+</p>
+
+</div>
+<b/>
+<br>
+<br>
+<br>
+<br>
+
+    <p>
+    <div class="footer">
+  <p>2019 © Uki. All Rights Reserved. An initiative by Yarl IT Hub</p>
+</div>
+    </p>
+
+</body>
+</html>
